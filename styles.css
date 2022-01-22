@@ -1,0 +1,13 @@
+:root {
+  --color-bg: hsl(217, 54%, 11%);
+  --color-card: hsl(216, 50%, 16%);
+  --color-line: hsl(215, 32%, 27%);
+  --color-white: hsl(0, 0%, 100%);
+}
+body {
+  background-color: var(--color-bg);
+  font-family: "Outfit", sans-serif;
+}
+
+@media (max-width: 365px) {
+}
