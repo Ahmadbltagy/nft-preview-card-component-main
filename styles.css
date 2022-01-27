@@ -3,10 +3,114 @@
   --color-card: hsl(216, 50%, 16%);
   --color-line: hsl(215, 32%, 27%);
   --color-white: hsl(0, 0%, 100%);
+  --color-ligth-blue : #00FFF8;
 }
+
 body {
   background-color: var(--color-bg);
   font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--color-white);
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 350px;
+  margin: 100px auto;
+  padding: 25px 2px;
+  border-radius: 10px;
+  background-color: var(--color-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-info {
+  text-align: start;
+  margin: 25px;
+}
+#card img {
+  width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  text-align: center;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 5px;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: var(--color-ligth-blue);
+
+}
+.container:hover .overlay {
+  opacity: .7;
+}
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#hov:hover{
+  color: var(--color-ligth-blue);
+  cursor: pointer;
+}
+#card-info {
+  width: 100%;
+}
+#card-info ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+hr {
+  width: 88%;
+  margin: 20px 0;
+  background-color: #8bacd9;
+}
+#creator {
+  width: 100%;
+}
+
+#creator ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 25px;
+}
+#creator img {
+  width: 35px;
+  display: inline-block;
+  margin-right: 5px;
+  border: 2px solid #fff;
+  border-radius: 50%;
 }
 
 @media (max-width: 365px) {
